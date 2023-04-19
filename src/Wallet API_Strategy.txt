@@ -1,0 +1,77 @@
+                             /********************** Task1 ****************************/
+
+As a DevOps engineer your task is to suggest a VCS and how each developer should follow to check in code in remote repository.
+1.Suggest VCS
+2.Submit strategy how each developer will use
+
+Solution as a Devops engineer:
+
+        As a DAs a DevOps engineer, my recommendation for version control system (VCS) for this project would be Git. Git is a popular distributed VCS that is widely used in the industry, has excellent documentation and community support, and integrates well with other DevOps tools.
+              To ensure a smooth development process and avoid any conflicts, each developer should follow the below strategy to check-in code in the remote repository:
+              1.	Each developer should fork the main repository and clone it to their local machine.
+              2.	They should create a new branch for each feature they are working on.
+              3.	After making the necessary changes in their branch, they should commit their changes and push their branch to their remote fork.
+              4.	They should then create a pull request (PR) from their branch to the main repository's development branch.
+              5.	The PR should be reviewed by other developers or a designated reviewer, and once approved, it should be merged into the development branch.
+              6.	Once all the features are completed and tested, the development branch should be merged into the release branch.
+              7.	The release branch should be tested and then merged into the master branch for deployment.
+        evOps engineer, my recommendation for version control system (VCS) for this project would be Git. Git is a popular distributed VCS that is widely used in the industry, has excellent documentation and community support, and integrates well with other DevOps tools.
+        To ensure a smooth development process and avoid any conflicts, each developer should follow the below strategy to check-in code in the remote repository:
+        1.	Each developer should fork the main repository and clone it to their local machine.
+        2.	They should create a new branch for each feature they are working on.
+        3.	After making the necessary changes in their branch, they should commit their changes and push their branch to their remote fork.
+        4.	They should then create a pull request (PR) from their branch to the main repository's development branch.
+        5.	The PR should be reviewed by other developers or a designated reviewer, and once approved, it should be merged into the development branch.
+        6.	Once all the features are completed and tested, the development branch should be merged into the release branch.
+        7.	The release branch should be tested and then merged into the master branch for deployment.
+
+        Steps in Practical:
+        1. git clone https://github.com/<username>/walletAPI.git
+        2. git checkout -b feature/add-withdraw-functionality
+        3. git add .
+        4. git commit -m "Added withdrawal functionality"
+        5. git push origin feature/add-withdraw-functionality
+
+                          /********************** Task2 ****************************/
+
+ As a Lead developer your task are:
+ 1.To create one master repository where you will commit interfaces so other developers can follow same approach
+ 2.To create Feature Branch and provide implementation of different features and once testing is done, you need to merge in release branch
+
+Solution as a Lead developer:
+
+        1. Creating a master repository:
+        As the Lead Developer, you would create a new repository on GitHub by clicking on the "New repository" button on your GitHub dashboard.
+        You would give the repository a name, such as "walletAPI", and select the option to create an empty repository
+        Once the repository is created, you would copy the repository's URL and use the git clone command to clone it to your local machine. For example:
+
+            1. git clone https://github.com/<username>/walletAPI.git
+            2. git checkout -b master
+            3. git add .
+            4. git commit -m "Added interfaces for walletAPI"
+            5. git push origin master
+
+        2. Creating feature branches:
+            1. git checkout -b feature/add-withdraw-functionality
+            2. git add .
+            3. git commit -m "Added withdrawal functionality"
+            4. git push origin feature/add-withdraw-functionality
+            5. git checkout release
+            6. git merge --no-ff feature/add-withdraw-functionality
+            7. git push origin release
+            8. git checkout master
+            9. git merge --no-ff release
+            10. git push origin master
+
+                        /********************** Task3 ****************************/
+
+As a Junior developer your task is:
+
+Solution as a Junior developer:
+            1. git checkout -b feature/logging
+            2. git add .
+            3. git commit -m "Added logging functionality"
+            4. git checkout release
+            5. git merge feature/logging
+            6. git checkout master
+            7. git merge release.
